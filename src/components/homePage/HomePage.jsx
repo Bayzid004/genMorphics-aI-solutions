@@ -17,9 +17,6 @@ const HomePage = () => {
         <Banner />
       </section>
       <section>
-        <About />
-      </section>
-      <section>
         <ChooseUs />
       </section>
       <section>

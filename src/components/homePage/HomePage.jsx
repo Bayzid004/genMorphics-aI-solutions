@@ -1,16 +1,13 @@
 import React from 'react'
 import Banner from './banner/Banner'
-import About from './about/About'
 import ChooseUs from './chooseUs/ChooseUs'
-import Services from './services/Services'
-import DreamYardCallFormSection from '../common/dreamYardCall&FormSection/DreamYardCallFormSection'
-import Review from './review/Review'
-import Gallery from './gallery/Gallery'
-import ServiceArea from './serviceArea/ServiceArea'
-import ContactUs from './contactUs/ContactUs'
-import Map from '../common/map/Map'
 import Data from './data/Data'
 import OurServices from './ourServices/OurServices'
+import WorkingProcess from './workingProcess/WorkingProcess'
+import OurResorces from './ourResorces/OurResorces'
+import OurProject from './ourProject/OurProject'
+import Companies from './companies/Companies'
+import TestimonialSection from './testimonial/TestimonialSection'
 
 const HomePage = () => {
   return (
@@ -26,6 +23,21 @@ const HomePage = () => {
       </section>
       <section>
         <OurServices />
+      </section>
+      <section>
+        <WorkingProcess />
+      </section>
+      <section>
+        <OurResorces />
+      </section>
+      <section>
+        <OurProject />
+      </section>
+      <section>
+        <Companies />
+      </section>
+      <section>
+        <TestimonialSection />
       </section>
     </div>
   )

@@ -8,6 +8,7 @@ import OurResorces from './ourResorces/OurResorces'
 import OurProject from './ourProject/OurProject'
 import Companies from './companies/Companies'
 import TestimonialSection from './testimonial/TestimonialSection'
+import FAQSection from './faqSection/FAQSection'
 
 const HomePage = () => {
   return (
@@ -38,6 +39,9 @@ const HomePage = () => {
       </section>
       <section>
         <TestimonialSection />
+      </section>
+      <section>
+        <FAQSection />
       </section>
     </div>
   )

@@ -9,6 +9,8 @@ import Gallery from './gallery/Gallery'
 import ServiceArea from './serviceArea/ServiceArea'
 import ContactUs from './contactUs/ContactUs'
 import Map from '../common/map/Map'
+import Data from './data/Data'
+import OurServices from './ourServices/OurServices'
 
 const HomePage = () => {
   return (
@@ -20,25 +22,10 @@ const HomePage = () => {
         <ChooseUs />
       </section>
       <section>
-        <Services />
+        <Data />
       </section>
       <section>
-        <DreamYardCallFormSection />
-      </section>
-      <section>
-        <Review />
-      </section>
-      <section>
-        <Gallery />
-      </section>
-      <section>
-        <ServiceArea />
-      </section>
-      <section>
-        <ContactUs />
-      </section>
-      <section>
-        <Map />
+        <OurServices />
       </section>
     </div>
   )

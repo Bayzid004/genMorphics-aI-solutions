@@ -6,17 +6,9 @@ const HeaderNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className="container relative z-50 px-4 mx-auto">
+    <div className="container px-7 mx-auto">
       <div
         className="
-          absolute w-full
-          max-w-[1183px]
-          left-0
-          md:left-0
-          lg:left-[250px]
-          xl:left-[368px]
-          -top-7
-          bg-white
           flex flex-col md:flex-row
           items-start md:items-center
           justify-between
@@ -27,12 +19,14 @@ const HeaderNavbar = () => {
       >
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Image
-            src="/grandLandscapingLogoNavbar.webp"
-            width={248}
-            height={53}
-            alt="callIconNavbar"
-          />
+          <a href="/#">
+            <Image
+              src="/img/logo2.png"
+              width={248}
+              height={53}
+              alt="callIconNavbar"
+            />
+          </a>
         </div>
 
         {/* Right side: hamburger + button (flex row, justify-between on small screens) */}
@@ -67,17 +61,6 @@ const HeaderNavbar = () => {
               )}
             </svg>
           </button>
-
-          {/* Free Estimate button */}
-          <button className="text-white font-bold flex items-center gap-2 bg-[#7E3C07] px-5 py-2 rounded whitespace-nowrap ml-auto md:ml-0">
-            <Image
-              src="/phoneIconNavbar.webp"
-              width={26}
-              height={26}
-              alt="callIconNavbar"
-            />
-            Free Estimate
-          </button>
         </div>
 
         {/* Navigation menu below on small screens, inline on md */}
@@ -96,36 +79,37 @@ const HeaderNavbar = () => {
             md:max-h-full md:mt-0
             gap-4 md:gap-6
             w-full md:w-auto
+            no-underline
           `}
         >
           <li>
-            <a href="/about" className="hover:text-[#7E3C07] transition block py-2 md:py-0">
-              About
+            <a href="/#" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+              HOME
             </a>
           </li>
           <li>
-            <a href="/services" className="hover:text-[#7E3C07] transition block py-2 md:py-0">
-              Services
+            <a href="/services" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+              ABOUT US
             </a>
           </li>
           <li>
-            <a href="/work" className="hover:text-[#7E3C07] transition block py-2 md:py-0">
-              Work
+            <a href="/work" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+              SERVICES
             </a>
           </li>
           <li>
-            <a href="/projects" className="hover:text-[#7E3C07] transition block py-2 md:py-0">
-              Projects
+            <a href="/projects" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+              PROJECTS
             </a>
           </li>
           <li>
-            <a href="/blog" className="hover:text-[#7E3C07] transition block py-2 md:py-0">
-              Blog
+            <a href="/blog" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+              TRSTIMONIALS
             </a>
           </li>
           <li>
-            <a href="/contactUs" className="hover:text-[#7E3C07] transition block py-2 md:py-0">
-              Contact Us
+            <a href="/contactUs" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+              CONTACT US
             </a>
           </li>
         </ul>

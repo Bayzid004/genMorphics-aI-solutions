@@ -1,34 +1,46 @@
-import Image from 'next/image'
+'use client'
+import React from 'react'
 
+const skills = [
+  { label: 'MACHINE LEARNING', value: 90 },
+  { label: 'LLM TRAINING', value: 95 },
+  { label: 'AI SOLUTIONS', value: 90 },
+]
 
 const ChooseUs = () => {
   return (
-    <div className='container px-7'>
-      <div className='grid grid-cols-9 items-center'>
-        <div className='col-span-4 space-y-4'>
-          <p className='text-[#b04ba1] font-bold'>Why Chose Us?</p>
-          <h1 className='text-4xl font-bold'>We Specialize in traing Large Language models</h1>
-          <p className='pt-3'>Unleash the Potential of Your Data with Expert Labeling High-quality, Targeted Training Data for Superior Model Performance.</p>
+    <section className="py-16 px-4 bg-white">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        {/* Left Content */}
+        <div>
+          <h4 className="text-pink-600 font-semibold text-lg mb-2">Why Chose Us?</h4>
+          <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-6">
+            We Specialize in traing Large<br />Language models
+          </h2>
+          <p className="text-gray-600 text-base leading-relaxed">
+            Unleash the Potential of Your Data with Expert Labeling High-quality, Targeted Training Data for Superior Model Performance.
+          </p>
         </div>
-        <div className='col-span-5 space-y-5 pl-10'>
-          <div className='flex justify-between text-lg font-bold '>
-            <p>Machine Learning</p>
-            <p>90%</p>
-          </div>
-          <div className='h-[2px] w-full bg-slate-300'/>
-          <div className='flex justify-between text-lg font-bold '>
-            <p>LLM Training</p>
-            <p>95%</p>
-          </div>
-          <div className='h-[2px] w-full bg-slate-300'/>
-          <div className='flex justify-between text-lg font-bold '>
-            <p>AI Solutions</p>
-            <p>90%</p>
-          </div>
-          <div className='h-[2px] w-full bg-slate-300'/>
+
+        {/* Right Progress Bars */}
+        <div className="space-y-6">
+          {skills.map((skill, index) => (
+            <div key={index}>
+              <div className="flex justify-between mb-1 font-semibold text-sm text-gray-800">
+                <span>{skill.label}</span>
+                <span>{skill.value}%</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-1.5">
+                <div
+                  className="bg-pink-600 h-1.5 rounded-full"
+                  style={{ width: `${skill.value}%` }}
+                ></div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

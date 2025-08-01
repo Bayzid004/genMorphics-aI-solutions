@@ -1,9 +1,9 @@
-'use client'
-import React, { useState } from 'react'
-import Image from 'next/image'
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
 
 const HeaderNavbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="container px-7 mx-auto">
@@ -75,7 +75,7 @@ const HeaderNavbar = () => {
             md:flex
             transition-max-height duration-300 ease-in-out
             overflow-hidden
-            ${menuOpen ? 'max-h-[500px] mt-4' : 'max-h-0'}
+            ${menuOpen ? "max-h-[500px] mt-4" : "max-h-0"}
             md:max-h-full md:mt-0
             gap-4 md:gap-6
             w-full md:w-auto
@@ -83,39 +83,57 @@ const HeaderNavbar = () => {
           `}
         >
           <li>
-            <a href="/#" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+            <a
+              href="/#"
+              className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0"
+            >
               HOME
             </a>
           </li>
           <li>
-            <a href="/services" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+            <a
+              href="/services"
+              className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0"
+            >
               ABOUT US
             </a>
           </li>
           <li>
-            <a href="/work" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+            <a
+              href="/work"
+              className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0"
+            >
               SERVICES
             </a>
           </li>
           <li>
-            <a href="/projects" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+            <a
+              href="/projects"
+              className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0"
+            >
               PROJECTS
             </a>
           </li>
           <li>
-            <a href="/blog" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+            <a
+              href="/blog"
+              className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0"
+            >
               TRSTIMONIALS
             </a>
           </li>
           <li>
-            <a href="/contactUs" className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0">
+            <a
+              href="/contactUs"
+              className="text-black no-underline hover:no-underline hover:text-[#cf4697] transition block py-2 md:py-0"
+            >
               CONTACT US
             </a>
           </li>
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderNavbar
+export default HeaderNavbar;

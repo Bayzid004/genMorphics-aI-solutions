@@ -1,15 +1,17 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Send } from "lucide-react";
 import { useForm } from "react-hook-form";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { IoMdMailOpen } from "react-icons/io";
 
 const ContactSection = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
   } = useForm();
 
   const onSubmit = (data) => {
@@ -25,13 +27,12 @@ const ContactSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-        
         {/* Left Card */}
         <div className="bg-white shadow-xl p-6 text-left relative">
           <div className="absolute -bottom-3 -right-3 bg-white shadow-xl w-full h-full -z-10 rounded-md"></div>
 
           <div className="flex items-center gap-3 mb-6">
-            <Image src="/locationIcon.png" alt="Location" width={24} height={24} />
+            <FaMapLocationDot className="w-10 h-10 text-pink-800" />
             <h4 className="font-bold text-lg">Location</h4>
           </div>
           <p className="text-gray-700 mb-6">
@@ -44,7 +45,7 @@ const ContactSection = () => {
           <hr className="my-4" />
 
           <div className="flex items-center gap-3 mt-6">
-            <Image src="/mailIcon.png" alt="Mail" width={24} height={24} />
+            <IoMdMailOpen className="w-10 h-10 text-pink-800" />
             <h4 className="font-bold text-lg">Send A Mail</h4>
           </div>
           <p className="text-gray-700 mt-2">hr@genmorphicsai.com</p>
@@ -52,7 +53,9 @@ const ContactSection = () => {
 
         {/* Right Form */}
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          <h3 className="text-xl font-bold mb-4">We’d love to hear from you anytime</h3>
+          <h3 className="text-xl font-bold mb-4">
+            We’d love to hear from you anytime
+          </h3>
 
           <input
             type="text"

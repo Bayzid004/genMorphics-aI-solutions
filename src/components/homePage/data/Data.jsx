@@ -19,7 +19,7 @@ const Data = () => {
         {/* Left: Image */}
         <div className="flex justify-center">
           <Image
-            src="/feature-illustration.png"
+            src="/dataImage.png.png"
             alt="Feature Illustration"
             width={600}
             height={400}

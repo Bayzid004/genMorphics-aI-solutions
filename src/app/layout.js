@@ -11,8 +11,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: 'Grand Landscaping',
-  description: 'Grand Landscaping'
+  title: 'GenMorphics AI Solutions',
+  description: 'GenMorphics AI Solutions'
 }
 
 export default function RootLayout ({ children }) {

@@ -73,7 +73,7 @@ const FAQSection = () => {
                 {/* Right Section - Illustration */}
                 <div className="flex justify-center">
                     <Image
-                        src="/img/faq.png"
+                        src="/faq.png.png"
                         alt="Illustration"
                         width={450}
                         height={450}

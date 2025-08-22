@@ -17,13 +17,13 @@ const HomePage = () => {
       <section>
         <Banner />
       </section>
-      <section>
+      <section id='whychooseus'>
         <ChooseUs />
       </section>
       <section>
         <Data />
       </section>
-      <section>
+      <section id='ourservices'>
         <OurServices />
       </section>
       <section>
@@ -32,19 +32,19 @@ const HomePage = () => {
       <section>
         <OurResorces />
       </section>
-      <section>
+      <section id='ourprojects'>
         <OurProject />
       </section>
       <section>
         <Companies />
       </section>
-      <section>
+      <section id='testimonial'>
         <TestimonialSection />
       </section>
       <section>
         <FAQSection />
       </section>
-      <section>
+      <section id='contact'>
         <ContactSection />
       </section>
     </div>
